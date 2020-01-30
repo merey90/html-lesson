@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <table border="1">
-      <thead> <!-- shapka tablicy -->
-        <tr> <!-- sozdaem stroku -->
-          <th> <!-- sozdaem stolbec -->
+      <thead>
+        <!-- shapka tablicy -->
+        <tr>
+          <!-- sozdaem stroku -->
+          <th>
+            <!-- sozdaem stolbec -->
             Number
           </th>
           <th>
@@ -17,17 +19,20 @@
           </th>
         </tr>
       </thead>
-      <tbody> <!-- telo tablicy -->
+      <tbody>
+        <!-- telo tablicy -->
         <tr>
           <td>
             1
           </td>
-          <td colspan="2"> <!-- colspan ob'edinyaet sosezdnie yacheiki -->
+          <td colspan="2">
+            <!-- colspan ob'edinyaet sosezdnie yacheiki -->
             Merey Zholdas
           </td>
         </tr>
         <tr>
-          <td rowspan="2"> <!-- rowspan ob'ediyaet stroki -->
+          <td rowspan="2">
+            <!-- rowspan ob'ediyaet stroki -->
             2
           </td>
           <td>
@@ -46,17 +51,47 @@
           </td>
         </tr>
         <tr>
-        <td>
-          3
-        </td>
-        <td>
-          Meruyert
-        </td>
-        <td>
-          Tulenova
-        </td>
+          <td>
+            3
+          </td>
+          <td>
+            Meruyert
+          </td>
+          <td>
+            Tulenova
+          </td>
         </tr>
       </tbody>
     </table>
+    <br />
+    <form>
+      <label
+        >First Name
+        <input name="firstName" type="text" required />
+      </label>
+      <br />
+      <label
+        >Last Name
+        <input name="lastName" type="text" />
+      </label>
+      <br />
+      <label
+        >Age
+        <input name="age" type="date" />
+      </label>
+      <br />
+      <label
+        >Tell me about yourself
+        <br />
+        <textarea name="bio" rows="2"></textarea>
+      </label>
+      <br />
+      <label
+        >I agree with terms & conditions
+        <input name="terms" type="checkbox" />
+      </label>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
