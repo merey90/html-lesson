@@ -1,0 +1,63 @@
+/* pri pomoshi nazvaniya tega my vybiraem vse elementy s takim tegom */
+h1 {
+  color: coral;
+}
+
+/* pri pomoshi . my vybiraem class name */
+.topic-header {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.topic-author {
+  font-size: 20px;
+  color: gray;
+}
+
+/* pri pomoshi # my vybiraem po id */
+#salutation {
+  color: blue;
+  font-size: 18px;
+}
+
+.topic-emphysize {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.topic-body .topic-emphysize {
+  color: green;
+}
+
+.topic-body {
+  background-color: hotpink;
+  
+  border: 5px dashed yellow; /* tolshina - stil - cvet */
+  /* ekvivalent verhnemu stilyu */
+  border-style: dashed;
+  border-width: 5px;
+  border-color: yellow;
+
+  /* primenit border k odnoi storone */
+  border-left: 20px solid yellowgreen;
+
+  padding: 15px; /* otstup vnutri elementa */
+  margin-bottom: 30px; /* otstup snaruji elementa */
+}
+
+.and-operator thead th {
+  border-bottom: 1px solid black;
+}
+
+/*
+  :first-child - vybrat pervyi element
+  :last-child - vybrat poslednii element
+  :nth-child - vybrat opredelennyi element
+*/
+.and-operator thead th:nth-child(1) {
+  border-right: 1px solid black;
+}
+
+.and-operator tbody th {
+  border-right: 1px solid black;
+}
