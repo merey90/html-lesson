@@ -1,0 +1,86 @@
+/* General styles */
+body {
+  margin: 0;
+}
+
+.navigation ul {
+  /* ubiraem to4ki s lista */
+  list-style: none;
+}
+
+.navigation ul a {
+  /* Ubiraem podcherkivanie u ssylok */
+  text-decoration: none;
+}
+/* End of General styles */
+
+/* Header */
+header {
+  background-image: url("images/banner.jpg");
+  text-align: center;
+  padding: 80px;
+}
+
+.page-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-subtitle {
+  color: #938f8d;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+header .navigation ul {
+  /* raspolojit po gorizontali */
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  padding: 15px;
+  display: block;
+  color: #ffffffb3;
+}
+
+/* pri navedenii myshkoi */
+.nav-link.active {
+  border: 1px solid #ffffffb3;
+  border-radius: 30px;
+}
+
+.nav-link:hover {
+  color: white;
+  border-color: white;
+}
+
+/* End of header */
+
+/* Main */
+.main {
+  background-color: white;
+}
+
+.secondary {
+  background-color: #f2f2f2;
+}
+/* End of Main */
+
+/* Footer */
+footer .navigation {
+  background-color: #1d1d1d;
+}
+
+footer .copyright {
+  background-color: #141414;
+}
+
+/* End of Footer */
