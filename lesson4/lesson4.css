@@ -6,6 +6,7 @@ body {
 .navigation ul {
   /* ubiraem to4ki s lista */
   list-style: none;
+  padding: 0;
 }
 
 .navigation ul a {
@@ -77,10 +78,42 @@ header .navigation ul {
 /* Footer */
 footer .navigation {
   background-color: #1d1d1d;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+footer .navigation section {
+  flex-grow: 1;
+  padding: 0 40px;
+}
+
+.nav-title {
+  color: white;
+}
+
+.nav-list-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+}
+
+.nav-list-item:last-child {
+  border-bottom: none;
+}
+
+.footer-link {
+  color: #8e8e8e;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 footer .copyright {
   background-color: #141414;
+  text-align: center;
+  color: #3e3e3e;
+  padding: 40px;
 }
 
 /* End of Footer */
