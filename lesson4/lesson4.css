@@ -1,6 +1,12 @@
+/* opredelyaem peremennye */
+:root {
+  --font-color: #4c4c4c;  
+}
+
 /* General styles */
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 .navigation ul {
@@ -19,7 +25,12 @@ body {
 header {
   background-image: url("images/banner.jpg");
   text-align: center;
-  padding: 80px;
+  min-height: 480px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .page-title {
@@ -66,8 +77,60 @@ header .navigation ul {
 /* End of header */
 
 /* Main */
+main {
+  color: var(--font-color);
+}
+
 .main {
   background-color: white;
+  display: flex;
+  padding: 80px;
+}
+
+.content {
+  flex-basis: 60%;
+  padding-right: 40px;
+}
+
+.content h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.content h4 {
+  margin-top: 0;
+}
+
+.content a {
+  color: var(--font-color);
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+
+.aside {
+  flex-basis: 40%;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+}
+
+.post:last-child {
+  border: none;
+}
+
+.post-title {
+  color: #999;
+  font-size: 10px;
+}
+
+.post-content img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
 }
 
 .secondary {
