@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// alert('SALAM!!!')
+		// confirm('hello')
+		console.log('soobshenie')
+		let word = 'word';
+		let products = ['apples', 'bananas', 'eggs']; // array
+		console.log('List of products: ', products);
+		console.log('Product #3: ', products[2]);
+
+		// Example of primitive types
+		let exampleOfBoolean = true; // true or false
+		let text = 'I am string'; // string
+		let number = 112312323123; // number < 2^32
+		let bigNumber = Math.pow(2, 33); // big number > 2^32
+		let undef = undefined; // undefined
+		console.log('undef: ', undef);
+		let apple;
+		console.log('apple: ', apple);
+		let empty = null; // null
+		console.log('empty: ', empty);
+		let a = 'string';
+		a = 23;
+		a = false;
+		a = null;
+
+		/**
+		 * Booleans
+		 */
+		let isAdmin = false;
+		if(isAdmin) console.log("1) I am admin");
+		else console.log("1) I am NOT admin");
+		let name = 'Merey';
+		isAdmin = name === 'Merey';
+		if(isAdmin) console.log("2) I am admin");
+		else console.log("2) I am NOT admin");
+
+		// let roles = ['basic', 'premium', 'admin'];
+		// roles.forEach(role => {
+		// 	console.log("forEach: ", role);
+		// });
+
+		// roles.map(role => {
+		// 	console.log("map: ", role);
+		// });
+
+		// for(let i = 0; i < roles.length; i++) {
+		// 	console.log("for: ", roles[i]);
+		// }
+		/**
+		 * Numbers
+		 */
+		let apples = '5';
+		// == don't cares about type
+		if(apples == 5) console.log('types not important');
+		// === type is important
+		if(apples === 5) console.log('types are important!!!');
+		if(apples >= 5) console.log('types are equal but apples are more than 4');
+		
+		for(let i = 0; i<5; i++) { // 5 loops, from 0 to 4
+			if(i%2 === 0) { // ostatok pri delenii na 2
+				console.log('loop evens: ', i);
+			}
+			if(i%2 === 1) {
+				console.log('loop odds: ', i);
+			}
+		}
+	</script>
+</body>
+</html>
